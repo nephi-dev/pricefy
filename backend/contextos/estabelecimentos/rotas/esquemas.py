@@ -1,9 +1,8 @@
 from pydantic import BaseModel
-from uuid import UUID
 
 
 class EstabelecimentoRetorno(BaseModel):
-    id: UUID
+    id: int
     nome: str
     rua: str
     numero: str
@@ -28,5 +27,5 @@ class EstabelecimentoEntrada(BaseModel):
 
 
 class EstabelecimentoDadosBase(BaseModel):
-    id: UUID
+    id: int
     nome: str
